@@ -7,7 +7,19 @@
 
 import SwiftUI
 
+enum AuthenticationSheetView: String, Identifiable {
+    case register
+    case login
+    
+    var id: String {
+        return rawValue
+    }
+}
+
 struct ContentView: View {
+    
+    @State private var authenticationSheetView: AuthenticationSheetView?
+    
     var body: some View {
         VStack {
             Image("AppLogo")
@@ -21,7 +33,7 @@ struct ContentView: View {
                 .frame(width: 150)
                 .padding()
             
-            Button(action: { print("Login with email") }, label: {
+            Button(action: { authenticationSheetView = .login }, label: {
                 Label("Sign in with email", systemImage: "envelope.fill")
             })
             .tint(.black)
@@ -33,7 +45,7 @@ struct ContentView: View {
             Spacer()
             
             HStack {
-                Button(action: { print("Register") }, label: {
+                Button(action: { authenticationSheetView = .register }, label: {
                     Text("You do not have an account?")
                     Text("Sign up")
                         .underline()
@@ -42,7 +54,14 @@ struct ContentView: View {
             }
             
         }
-        .padding()
+        .sheet(item: $authenticationSheetView, content: { sheet in
+            switch sheet {
+                case .login:
+                    Text("Login")
+                case .register:
+                    Text("Register")
+            }
+        })
     }
 }
 
