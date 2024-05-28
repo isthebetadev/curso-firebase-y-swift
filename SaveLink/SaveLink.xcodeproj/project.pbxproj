@@ -13,6 +13,8 @@
 		4574714C2C05D624008C110D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4574714B2C05D624008C110D /* Preview Assets.xcassets */; };
 		457471542C05D650008C110D /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 457471532C05D650008C110D /* FirebaseAnalytics */; };
 		457471562C05D667008C110D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 457471552C05D667008C110D /* GoogleService-Info.plist */; };
+		457471582C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 457471572C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion */; };
+		4574715A2C05D7CC008C110D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 457471592C05D7CC008C110D /* FirebaseAnalyticsSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4574715A2C05D7CC008C110D /* FirebaseAnalyticsSwift in Frameworks */,
 				457471542C05D650008C110D /* FirebaseAnalytics in Frameworks */,
+				457471582C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +94,8 @@
 			name = SaveLink;
 			packageProductDependencies = (
 				457471532C05D650008C110D /* FirebaseAnalytics */,
+				457471572C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion */,
+				457471592C05D7CC008C110D /* FirebaseAnalyticsSwift */,
 			);
 			productName = SaveLink;
 			productReference = 457471412C05D623008C110D /* SaveLink.app */;
@@ -371,6 +377,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 457471522C05D650008C110D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalytics;
+		};
+		457471572C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457471522C05D650008C110D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		457471592C05D7CC008C110D /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457471522C05D650008C110D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
