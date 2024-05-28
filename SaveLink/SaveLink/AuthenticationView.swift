@@ -26,11 +26,11 @@ struct AuthenticationView: View {
                 .resizable()
                 .frame(width: 200, height: 200)
             
-            Text("Wellcome to Save Link")
+            Text("👋🏻 Wellcome to Save Link")
                 .font(.title)
                 .bold()
                 .fontDesign(.monospaced)
-                .frame(width: 150)
+                .frame(width: 190)
                 .padding()
             
             Button(action: { authenticationSheetView = .login }, label: {

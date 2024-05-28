@@ -15,6 +15,7 @@
 		457471562C05D667008C110D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 457471552C05D667008C110D /* GoogleService-Info.plist */; };
 		457471582C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 457471572C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion */; };
 		4574715A2C05D7CC008C110D /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 457471592C05D7CC008C110D /* FirebaseAnalyticsSwift */; };
+		4574715D2C05DFC2008C110D /* LoginWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		457471482C05D624008C110D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4574714B2C05D624008C110D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		457471552C05D667008C110D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 		4574715B2C05DF98008C110D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				457471472C05D623008C110D /* AuthenticationView.swift in Sources */,
+				4574715D2C05DFC2008C110D /* LoginWithEmailView.swift in Sources */,
 				457471452C05D623008C110D /* SaveLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
