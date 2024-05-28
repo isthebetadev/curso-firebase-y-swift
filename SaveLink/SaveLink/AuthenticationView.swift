@@ -16,7 +16,7 @@ enum AuthenticationSheetView: String, Identifiable {
     }
 }
 
-struct ContentView: View {
+struct AuthenticationView: View {
     
     @State private var authenticationSheetView: AuthenticationSheetView?
     
@@ -66,5 +66,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    AuthenticationView()
 }

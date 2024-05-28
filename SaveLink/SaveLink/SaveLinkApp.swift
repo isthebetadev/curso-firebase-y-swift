@@ -24,7 +24,7 @@ struct SaveLinkApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AuthenticationView()
         }
     }
 }
