@@ -1,5 +1,5 @@
 //
-//  LoginWithEmailView.swift
+//  RegisterWithEmailView.swift
 //  SaveLink
 //
 //  Created by Ruben on 28/5/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginWithEmailView: View {
+struct RegisterWithEmailView: View {
     
     @State private var email: String = ""
     @State private var password: String = ""
@@ -19,7 +19,7 @@ struct LoginWithEmailView: View {
                 .padding(.top, 10)
             
             Group {
-                Text("Welcome back")
+                Text("Welcome")
                     .bold()
             }
             .padding(.top, 66)
@@ -28,14 +28,14 @@ struct LoginWithEmailView: View {
             .tint(.primary)
             
             Group {
-                Text("Log in to access your links.")
+                Text("Register to access your links.")
                     .tint(.secondary)
                     .padding(.bottom, 32)
                 TextField("Add your email", text: $email)
                     .keyboardType(.emailAddress)
                 SecureField("Add your password", text: $password)
-                Button(action: {print("Login form submit")}, label: {
-                    Text("Login")
+                Button(action: {print("Register form submit")}, label: {
+                    Text("Register")
                 })
                 .padding(.top, 16)
                 .buttonStyle(.bordered)
@@ -51,5 +51,5 @@ struct LoginWithEmailView: View {
 }
 
 #Preview {
-    LoginWithEmailView()
+    RegisterWithEmailView()
 }
