@@ -7,24 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		457471262C05D4E1008C110D /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471252C05D4E1008C110D /* SaveLinkApp.swift */; };
-		457471282C05D4E1008C110D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471272C05D4E1008C110D /* ContentView.swift */; };
-		4574712A2C05D4E1008C110D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471292C05D4E1008C110D /* Item.swift */; };
-		4574712C2C05D4E3008C110D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4574712B2C05D4E3008C110D /* Assets.xcassets */; };
-		4574712F2C05D4E3008C110D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4574712E2C05D4E3008C110D /* Preview Assets.xcassets */; };
+		457471452C05D623008C110D /* SaveLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471442C05D623008C110D /* SaveLinkApp.swift */; };
+		457471472C05D623008C110D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471462C05D623008C110D /* ContentView.swift */; };
+		457471492C05D624008C110D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 457471482C05D624008C110D /* Assets.xcassets */; };
+		4574714C2C05D624008C110D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4574714B2C05D624008C110D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		457471222C05D4E1008C110D /* SaveLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		457471252C05D4E1008C110D /* SaveLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkApp.swift; sourceTree = "<group>"; };
-		457471272C05D4E1008C110D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		457471292C05D4E1008C110D /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
-		4574712B2C05D4E3008C110D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		4574712E2C05D4E3008C110D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		457471412C05D623008C110D /* SaveLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaveLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		457471442C05D623008C110D /* SaveLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLinkApp.swift; sourceTree = "<group>"; };
+		457471462C05D623008C110D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		457471482C05D624008C110D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4574714B2C05D624008C110D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4574711F2C05D4E1008C110D /* Frameworks */ = {
+		4574713E2C05D623008C110D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,38 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		457471192C05D4E1008C110D = {
+		457471382C05D623008C110D = {
 			isa = PBXGroup;
 			children = (
-				457471242C05D4E1008C110D /* SaveLink */,
-				457471232C05D4E1008C110D /* Products */,
+				457471432C05D623008C110D /* SaveLink */,
+				457471422C05D623008C110D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		457471232C05D4E1008C110D /* Products */ = {
+		457471422C05D623008C110D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				457471222C05D4E1008C110D /* SaveLink.app */,
+				457471412C05D623008C110D /* SaveLink.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		457471242C05D4E1008C110D /* SaveLink */ = {
+		457471432C05D623008C110D /* SaveLink */ = {
 			isa = PBXGroup;
 			children = (
-				457471252C05D4E1008C110D /* SaveLinkApp.swift */,
-				457471272C05D4E1008C110D /* ContentView.swift */,
-				457471292C05D4E1008C110D /* Item.swift */,
-				4574712B2C05D4E3008C110D /* Assets.xcassets */,
-				4574712D2C05D4E3008C110D /* Preview Content */,
+				457471442C05D623008C110D /* SaveLinkApp.swift */,
+				457471462C05D623008C110D /* ContentView.swift */,
+				457471482C05D624008C110D /* Assets.xcassets */,
+				4574714A2C05D624008C110D /* Preview Content */,
 			);
 			path = SaveLink;
 			sourceTree = "<group>";
 		};
-		4574712D2C05D4E3008C110D /* Preview Content */ = {
+		4574714A2C05D624008C110D /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				4574712E2C05D4E3008C110D /* Preview Assets.xcassets */,
+				4574714B2C05D624008C110D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -73,13 +70,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		457471212C05D4E1008C110D /* SaveLink */ = {
+		457471402C05D623008C110D /* SaveLink */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 457471322C05D4E3008C110D /* Build configuration list for PBXNativeTarget "SaveLink" */;
+			buildConfigurationList = 4574714F2C05D624008C110D /* Build configuration list for PBXNativeTarget "SaveLink" */;
 			buildPhases = (
-				4574711E2C05D4E1008C110D /* Sources */,
-				4574711F2C05D4E1008C110D /* Frameworks */,
-				457471202C05D4E1008C110D /* Resources */,
+				4574713D2C05D623008C110D /* Sources */,
+				4574713E2C05D623008C110D /* Frameworks */,
+				4574713F2C05D623008C110D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -87,25 +84,25 @@
 			);
 			name = SaveLink;
 			productName = SaveLink;
-			productReference = 457471222C05D4E1008C110D /* SaveLink.app */;
+			productReference = 457471412C05D623008C110D /* SaveLink.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4574711A2C05D4E1008C110D /* Project object */ = {
+		457471392C05D623008C110D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
-					457471212C05D4E1008C110D = {
+					457471402C05D623008C110D = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
 			};
-			buildConfigurationList = 4574711D2C05D4E1008C110D /* Build configuration list for PBXProject "SaveLink" */;
+			buildConfigurationList = 4574713C2C05D623008C110D /* Build configuration list for PBXProject "SaveLink" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,43 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 457471192C05D4E1008C110D;
-			productRefGroup = 457471232C05D4E1008C110D /* Products */;
+			mainGroup = 457471382C05D623008C110D;
+			productRefGroup = 457471422C05D623008C110D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				457471212C05D4E1008C110D /* SaveLink */,
+				457471402C05D623008C110D /* SaveLink */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		457471202C05D4E1008C110D /* Resources */ = {
+		4574713F2C05D623008C110D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4574712F2C05D4E3008C110D /* Preview Assets.xcassets in Resources */,
-				4574712C2C05D4E3008C110D /* Assets.xcassets in Resources */,
+				4574714C2C05D624008C110D /* Preview Assets.xcassets in Resources */,
+				457471492C05D624008C110D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4574711E2C05D4E1008C110D /* Sources */ = {
+		4574713D2C05D623008C110D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				457471282C05D4E1008C110D /* ContentView.swift in Sources */,
-				4574712A2C05D4E1008C110D /* Item.swift in Sources */,
-				457471262C05D4E1008C110D /* SaveLinkApp.swift in Sources */,
+				457471472C05D623008C110D /* ContentView.swift in Sources */,
+				457471452C05D623008C110D /* SaveLinkApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		457471302C05D4E3008C110D /* Debug */ = {
+		4574714D2C05D624008C110D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -212,7 +208,7 @@
 			};
 			name = Debug;
 		};
-		457471312C05D4E3008C110D /* Release */ = {
+		4574714E2C05D624008C110D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -268,7 +264,7 @@
 			};
 			name = Release;
 		};
-		457471332C05D4E3008C110D /* Debug */ = {
+		457471502C05D624008C110D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -296,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		457471342C05D4E3008C110D /* Release */ = {
+		457471512C05D624008C110D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -327,25 +323,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4574711D2C05D4E1008C110D /* Build configuration list for PBXProject "SaveLink" */ = {
+		4574713C2C05D623008C110D /* Build configuration list for PBXProject "SaveLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				457471302C05D4E3008C110D /* Debug */,
-				457471312C05D4E3008C110D /* Release */,
+				4574714D2C05D624008C110D /* Debug */,
+				4574714E2C05D624008C110D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		457471322C05D4E3008C110D /* Build configuration list for PBXNativeTarget "SaveLink" */ = {
+		4574714F2C05D624008C110D /* Build configuration list for PBXNativeTarget "SaveLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				457471332C05D4E3008C110D /* Debug */,
-				457471342C05D4E3008C110D /* Release */,
+				457471502C05D624008C110D /* Debug */,
+				457471512C05D624008C110D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4574711A2C05D4E1008C110D /* Project object */;
+	rootObject = 457471392C05D623008C110D /* Project object */;
 }
