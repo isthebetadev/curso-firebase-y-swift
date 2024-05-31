@@ -18,6 +18,7 @@ enum AuthenticationSheetView: String, Identifiable {
 
 struct AuthenticationView: View {
     
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @State private var authenticationSheetView: AuthenticationSheetView?
     
     var body: some View {
@@ -66,5 +67,5 @@ struct AuthenticationView: View {
 }
 
 #Preview {
-    AuthenticationView()
+    AuthenticationView(authenticationViewModel: .init())
 }

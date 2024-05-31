@@ -11,7 +11,7 @@ final class AuthenticationRepository {
     
     private let authenticationFirebaseDataSource: AuthenticationFirebaseDataSource
     
-    init(authenticationFirebaseDataSource: AuthenticationFirebaseDataSource) {
+    init(authenticationFirebaseDataSource: AuthenticationFirebaseDataSource = AuthenticationFirebaseDataSource()) {
         self.authenticationFirebaseDataSource = authenticationFirebaseDataSource
     }
     

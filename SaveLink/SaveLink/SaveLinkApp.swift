@@ -21,10 +21,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct SaveLinkApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject var authenticationViewModel = AuthenticationViewModel()
     
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
+            if let user = authenticationViewModel.user {
+                Text("User logged with email: \(user.email)")
+            } else {
+                AuthenticationView(authenticationViewModel: authenticationViewModel)
+            }
         }
     }
 }
