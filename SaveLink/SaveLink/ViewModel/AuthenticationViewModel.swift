@@ -19,15 +19,15 @@ final class AuthenticationViewModel: ObservableObject {
     }
     
     func createNewUser(email: String, password: String) {
-            authenticationRepository.createNewUser(email: email,
-                                                   password: password) { [weak self] result in
-                switch result {
+        authenticationRepository.createNewUser(email: email,
+                                               password: password) { [weak self] result in
+            switch result {
                 case .success(let user):
                     self?.user = user
                 case .failure(let error):
                     self?.messageError = error.localizedDescription
-                }
             }
         }
+    }
     
 }
