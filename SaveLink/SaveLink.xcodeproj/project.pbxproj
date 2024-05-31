@@ -18,6 +18,10 @@
 		4574715D2C05DFC2008C110D /* LoginWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */; };
 		4574715F2C05E339008C110D /* RegisterWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574715E2C05E339008C110D /* RegisterWithEmailView.swift */; };
 		457471612C05E3E2008C110D /* DismissView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471602C05E3E1008C110D /* DismissView.swift */; };
+		457471642C09C827008C110D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 457471632C09C827008C110D /* FirebaseAuth */; };
+		457471672C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471662C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift */; };
+		4574716B2C09CA93008C110D /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574716A2C09CA93008C110D /* AuthenticationRepository.swift */; };
+		4574716E2C09CB33008C110D /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574716D2C09CB33008C110D /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,9 @@
 		4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailView.swift; sourceTree = "<group>"; };
 		4574715E2C05E339008C110D /* RegisterWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWithEmailView.swift; sourceTree = "<group>"; };
 		457471602C05E3E1008C110D /* DismissView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissView.swift; sourceTree = "<group>"; };
+		457471662C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationFirebaseDataSource.swift; sourceTree = "<group>"; };
+		4574716A2C09CA93008C110D /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
+		4574716D2C09CB33008C110D /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +47,7 @@
 				4574715A2C05D7CC008C110D /* FirebaseAnalyticsSwift in Frameworks */,
 				457471542C05D650008C110D /* FirebaseAnalytics in Frameworks */,
 				457471582C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				457471642C09C827008C110D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +59,7 @@
 			children = (
 				457471432C05D623008C110D /* SaveLink */,
 				457471422C05D623008C110D /* Products */,
+				457471622C09C827008C110D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +74,8 @@
 		457471432C05D623008C110D /* SaveLink */ = {
 			isa = PBXGroup;
 			children = (
+				4574716C2C09CB23008C110D /* ViewModel */,
+				457471652C09C882008C110D /* Data */,
 				4574715B2C05DF98008C110D /* View */,
 				457471442C05D623008C110D /* SaveLinkApp.swift */,
 				457471462C05D623008C110D /* AuthenticationView.swift */,
@@ -93,6 +104,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		457471622C09C827008C110D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		457471652C09C882008C110D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				457471662C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift */,
+				4574716A2C09CA93008C110D /* AuthenticationRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4574716C2C09CB23008C110D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4574716D2C09CB33008C110D /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,6 +148,7 @@
 				457471532C05D650008C110D /* FirebaseAnalytics */,
 				457471572C05D7CC008C110D /* FirebaseAnalyticsOnDeviceConversion */,
 				457471592C05D7CC008C110D /* FirebaseAnalyticsSwift */,
+				457471632C09C827008C110D /* FirebaseAuth */,
 			);
 			productName = SaveLink;
 			productReference = 457471412C05D623008C110D /* SaveLink.app */;
@@ -173,10 +209,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				457471472C05D623008C110D /* AuthenticationView.swift in Sources */,
+				457471672C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift in Sources */,
 				457471612C05E3E2008C110D /* DismissView.swift in Sources */,
 				4574715D2C05DFC2008C110D /* LoginWithEmailView.swift in Sources */,
+				4574716E2C09CB33008C110D /* AuthenticationViewModel.swift in Sources */,
 				4574715F2C05E339008C110D /* RegisterWithEmailView.swift in Sources */,
 				457471452C05D623008C110D /* SaveLinkApp.swift in Sources */,
+				4574716B2C09CA93008C110D /* AuthenticationRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +446,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 457471522C05D650008C110D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAnalyticsSwift;
+		};
+		457471632C09C827008C110D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 457471522C05D650008C110D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
