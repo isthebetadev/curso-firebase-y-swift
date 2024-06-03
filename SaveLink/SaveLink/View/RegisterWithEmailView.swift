@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RegisterWithEmailView: View {
     
+    @ObservedObject var authenticationViewModel: AuthenticationViewModel
     @State private var email: String = ""
     @State private var password: String = ""
     
@@ -34,12 +35,22 @@ struct RegisterWithEmailView: View {
                 TextField("Add your email", text: $email)
                     .keyboardType(.emailAddress)
                 SecureField("Add your password", text: $password)
-                Button(action: {print("Register form submit")}, label: {
+                Button(action: {
+                    print("Register form submit")
+                    authenticationViewModel.createNewUser(email: email, password: password)
+                }, label: {
                     Text("Register")
                 })
                 .padding(.top, 16)
                 .buttonStyle(.bordered)
                 .tint(.blue)
+                if let messageError = authenticationViewModel.messageError {
+                    Text(messageError)
+                        .bold()
+                        .font(.body)
+                        .foregroundStyle(.red)
+                        .padding(.top, 20)
+                }
             }
             .textFieldStyle(.roundedBorder)
             .padding(.horizontal, 64)
@@ -51,5 +62,5 @@ struct RegisterWithEmailView: View {
 }
 
 #Preview {
-    RegisterWithEmailView()
+    RegisterWithEmailView(authenticationViewModel: .init())
 }
