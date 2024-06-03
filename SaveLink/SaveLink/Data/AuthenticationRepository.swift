@@ -29,4 +29,10 @@ final class AuthenticationRepository {
         try authenticationFirebaseDataSource.logout()
     }
     
+    func login(email: String, password: String, completionBlock: @escaping (Result<User, Error>) -> Void) {
+        authenticationFirebaseDataSource.login(email: email,
+                                                       password: password,
+                                                       completionBlock: completionBlock)
+    }
+    
 }
