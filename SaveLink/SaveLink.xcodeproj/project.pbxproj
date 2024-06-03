@@ -76,11 +76,8 @@
 		457471432C05D623008C110D /* SaveLink */ = {
 			isa = PBXGroup;
 			children = (
-				4574716C2C09CB23008C110D /* ViewModel */,
-				457471652C09C882008C110D /* Data */,
-				4574715B2C05DF98008C110D /* View */,
+				457471732C0E2B7E008C110D /* Authentication */,
 				457471442C05D623008C110D /* SaveLinkApp.swift */,
-				457471462C05D623008C110D /* AuthenticationView.swift */,
 				4574716F2C0E1F34008C110D /* GoogleService-Info.plist */,
 				457471482C05D624008C110D /* Assets.xcassets */,
 				4574714A2C05D624008C110D /* Preview Content */,
@@ -99,6 +96,7 @@
 		4574715B2C05DF98008C110D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				457471462C05D623008C110D /* AuthenticationView.swift */,
 				4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */,
 				4574715E2C05E339008C110D /* RegisterWithEmailView.swift */,
 				457471602C05E3E1008C110D /* DismissView.swift */,
@@ -114,13 +112,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		457471652C09C882008C110D /* Data */ = {
+		457471652C09C882008C110D /* Repository */ = {
 			isa = PBXGroup;
 			children = (
 				457471662C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift */,
 				4574716A2C09CA93008C110D /* AuthenticationRepository.swift */,
 			);
-			path = Data;
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		4574716C2C09CB23008C110D /* ViewModel */ = {
@@ -129,6 +127,16 @@
 				4574716D2C09CB33008C110D /* AuthenticationViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		457471732C0E2B7E008C110D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				4574716C2C09CB23008C110D /* ViewModel */,
+				457471652C09C882008C110D /* Repository */,
+				4574715B2C05DF98008C110D /* View */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
