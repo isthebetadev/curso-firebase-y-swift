@@ -16,6 +16,7 @@ final class AuthenticationViewModel: ObservableObject {
     
     init(authenticationRepository: AuthenticationRepository = AuthenticationRepository()) {
         self.authenticationRepository = authenticationRepository
+        getCurrentUser()
     }
     
     func createNewUser(email: String, password: String) {
@@ -28,6 +29,10 @@ final class AuthenticationViewModel: ObservableObject {
                     self?.messageError = error.localizedDescription
             }
         }
+    }
+    
+    func getCurrentUser() {
+        self.user = authenticationRepository.getCurrentUser()
     }
     
 }

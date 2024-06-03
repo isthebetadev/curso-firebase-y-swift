@@ -21,4 +21,8 @@ final class AuthenticationRepository {
                                                        completionBlock: completionBlock)
     }
     
+    func getCurrentUser() -> User? {
+        authenticationFirebaseDataSource.getCurrentUser()
+    }
+    
 }

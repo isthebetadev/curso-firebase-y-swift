@@ -28,4 +28,11 @@ final class AuthenticationFirebaseDataSource {
         }
     }
     
+    func getCurrentUser() -> User? {
+        guard let email = Auth.auth().currentUser?.email else {
+            return nil
+        }
+        return .init(email: email)
+    }
+    
 }
