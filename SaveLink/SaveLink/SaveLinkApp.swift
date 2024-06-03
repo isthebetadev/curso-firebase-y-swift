@@ -26,7 +26,7 @@ struct SaveLinkApp: App {
     var body: some Scene {
         WindowGroup {
             if let user = authenticationViewModel.user {
-                Text("User logged with email: \(user.email)")
+                HomeView(authenticationViewModel: authenticationViewModel)
             } else {
                 AuthenticationView(authenticationViewModel: authenticationViewModel)
             }

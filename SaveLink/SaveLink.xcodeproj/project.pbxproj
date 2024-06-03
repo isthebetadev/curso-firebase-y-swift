@@ -22,6 +22,7 @@
 		4574716B2C09CA93008C110D /* AuthenticationRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574716A2C09CA93008C110D /* AuthenticationRepository.swift */; };
 		4574716E2C09CB33008C110D /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574716D2C09CB33008C110D /* AuthenticationViewModel.swift */; };
 		457471702C0E1F34008C110D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4574716F2C0E1F34008C110D /* GoogleService-Info.plist */; };
+		457471722C0E26C8008C110D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471712C0E26C8008C110D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4574716A2C09CA93008C110D /* AuthenticationRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRepository.swift; sourceTree = "<group>"; };
 		4574716D2C09CB33008C110D /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		4574716F2C0E1F34008C110D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		457471712C0E26C8008C110D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				4574715C2C05DFC2008C110D /* LoginWithEmailView.swift */,
 				4574715E2C05E339008C110D /* RegisterWithEmailView.swift */,
 				457471602C05E3E1008C110D /* DismissView.swift */,
+				457471712C0E26C8008C110D /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				457471722C0E26C8008C110D /* HomeView.swift in Sources */,
 				457471472C05D623008C110D /* AuthenticationView.swift in Sources */,
 				457471672C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift in Sources */,
 				457471612C05E3E2008C110D /* DismissView.swift in Sources */,
