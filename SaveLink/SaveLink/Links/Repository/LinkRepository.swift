@@ -23,16 +23,5 @@ final class LinkRepository {
 
     func createNewLink(withURL url: String, completionBlock: @escaping (Result<LinkModel, Error>) -> Void) {
         metadataDatasource.getMetadata(fromURL: url, completionBlock: completionBlock)
-        /*
-         { [weak self] result in
-             switch result {
-             case .success(let linkModel):
-                 self?.linkDatasource.createNew(link: linkModel,
-                                                completionBlock: completionBlock)
-             case .failure(let error):
-                 completionBlock(.failure(error))
-             }
-         }
-         */
     }
 }
