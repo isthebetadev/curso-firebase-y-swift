@@ -29,6 +29,7 @@
 		4574717F2C0F19C2008C110D /* LinkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574717E2C0F19C2008C110D /* LinkDataSource.swift */; };
 		45AEC84F2C0F2068008673A4 /* LinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC84E2C0F2068008673A4 /* LinkRepository.swift */; };
 		45AEC8512C0F2395008673A4 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC8502C0F2395008673A4 /* LinkView.swift */; };
+		45AEC8532C0F2DEA008673A4 /* MetadataDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC8522C0F2DEA008673A4 /* MetadataDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		4574717E2C0F19C2008C110D /* LinkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDataSource.swift; sourceTree = "<group>"; };
 		45AEC84E2C0F2068008673A4 /* LinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRepository.swift; sourceTree = "<group>"; };
 		45AEC8502C0F2395008673A4 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
+		45AEC8522C0F2DEA008673A4 /* MetadataDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +177,7 @@
 			children = (
 				4574717E2C0F19C2008C110D /* LinkDataSource.swift */,
 				45AEC84E2C0F2068008673A4 /* LinkRepository.swift */,
+				45AEC8522C0F2DEA008673A4 /* MetadataDatasource.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				4574715D2C05DFC2008C110D /* LoginWithEmailView.swift in Sources */,
 				4574716E2C09CB33008C110D /* AuthenticationViewModel.swift in Sources */,
 				4574715F2C05E339008C110D /* RegisterWithEmailView.swift in Sources */,
+				45AEC8532C0F2DEA008673A4 /* MetadataDatasource.swift in Sources */,
 				4574717F2C0F19C2008C110D /* LinkDataSource.swift in Sources */,
 				45AEC8512C0F2395008673A4 /* LinkView.swift in Sources */,
 				457471452C05D623008C110D /* SaveLinkApp.swift in Sources */,
