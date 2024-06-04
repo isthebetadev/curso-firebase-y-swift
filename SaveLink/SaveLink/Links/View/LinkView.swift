@@ -26,6 +26,7 @@ struct LinkView: View {
             
             Button(action: {
                 linkViewModel.createNewLink(fromURL: text)
+                text = ""
             }, label: {
                 Label("Crear Link", systemImage: "link")
             })
@@ -61,14 +62,14 @@ struct LinkView: View {
                             Image(systemName: "checkmark.circle.fill")
                                 .resizable()
                                 .foregroundStyle(.blue)
-                                .frame(width: 10, height: 12)
+                                .frame(width: 12, height: 12)
                         }
                         
                         if link.isFavorite {
                             Image(systemName: "star.fill")
                                 .resizable()
                                 .foregroundStyle(.yellow)
-                                .frame(width: 10, height: 12)
+                                .frame(width: 12, height: 12)
                         }
                         
                     }
