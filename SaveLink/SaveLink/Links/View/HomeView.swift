@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var authenticationViewModel: AuthenticationViewModel
+    @StateObject var linkViewModel: LinkViewModel = LinkViewModel()
     
     var body: some View {
         NavigationStack {
@@ -18,6 +19,7 @@ struct HomeView: View {
                     Text("Bienvenido \(email)")
                 }
                 Spacer()
+                LinkView(linkViewModel: linkViewModel)
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Home")

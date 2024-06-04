@@ -27,7 +27,8 @@
 		457471772C0F192D008C110D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 457471762C0F192D008C110D /* FirebaseFirestoreSwift */; };
 		4574717D2C0F19B3008C110D /* LinkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574717C2C0F19B3008C110D /* LinkViewModel.swift */; };
 		4574717F2C0F19C2008C110D /* LinkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4574717E2C0F19C2008C110D /* LinkDataSource.swift */; };
-		457471812C0F19D6008C110D /* LinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457471802C0F19D6008C110D /* LinkRepository.swift */; };
+		45AEC84F2C0F2068008673A4 /* LinkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC84E2C0F2068008673A4 /* LinkRepository.swift */; };
+		45AEC8512C0F2395008673A4 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AEC8502C0F2395008673A4 /* LinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +47,8 @@
 		457471712C0E26C8008C110D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4574717C2C0F19B3008C110D /* LinkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewModel.swift; sourceTree = "<group>"; };
 		4574717E2C0F19C2008C110D /* LinkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkDataSource.swift; sourceTree = "<group>"; };
-		457471802C0F19D6008C110D /* LinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRepository.swift; sourceTree = "<group>"; };
+		45AEC84E2C0F2068008673A4 /* LinkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkRepository.swift; sourceTree = "<group>"; };
+		45AEC8502C0F2395008673A4 /* LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				457471712C0E26C8008C110D /* HomeView.swift */,
+				45AEC8502C0F2395008673A4 /* LinkView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,7 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				4574717E2C0F19C2008C110D /* LinkDataSource.swift */,
-				457471802C0F19D6008C110D /* LinkRepository.swift */,
+				45AEC84E2C0F2068008673A4 /* LinkRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -271,11 +274,12 @@
 				4574717D2C0F19B3008C110D /* LinkViewModel.swift in Sources */,
 				457471672C09C8A3008C110D /* AuthenticationFirebaseDataSource.swift in Sources */,
 				457471612C05E3E2008C110D /* DismissView.swift in Sources */,
-				457471812C0F19D6008C110D /* LinkRepository.swift in Sources */,
+				45AEC84F2C0F2068008673A4 /* LinkRepository.swift in Sources */,
 				4574715D2C05DFC2008C110D /* LoginWithEmailView.swift in Sources */,
 				4574716E2C09CB33008C110D /* AuthenticationViewModel.swift in Sources */,
 				4574715F2C05E339008C110D /* RegisterWithEmailView.swift in Sources */,
 				4574717F2C0F19C2008C110D /* LinkDataSource.swift in Sources */,
+				45AEC8512C0F2395008673A4 /* LinkView.swift in Sources */,
 				457471452C05D623008C110D /* SaveLinkApp.swift in Sources */,
 				4574716B2C09CA93008C110D /* AuthenticationRepository.swift in Sources */,
 			);
