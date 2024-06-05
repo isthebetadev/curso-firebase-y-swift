@@ -31,6 +31,7 @@ final class LinkViewModel: ObservableObject {
     }
     
     func createNewLink(fromURL url: String) {
+        TrackerAnalytics.trackCreateLinkEvent(url: url)
         linkRepository.createNewLink(withURL: url, completionBlock: { [weak self] result in
             switch result {
             case .success(let linkModel):
