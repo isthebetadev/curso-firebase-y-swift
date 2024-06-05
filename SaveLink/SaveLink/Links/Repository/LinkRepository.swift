@@ -33,4 +33,9 @@ final class LinkRepository {
                     }
                 }
     }
+    
+    func update(link: LinkModel) {
+        linkDataSource.updateLink(link: link)
+    }
+        
 }
