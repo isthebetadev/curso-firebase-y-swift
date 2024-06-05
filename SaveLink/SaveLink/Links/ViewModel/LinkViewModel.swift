@@ -43,7 +43,8 @@ final class LinkViewModel: ObservableObject {
     }
     
     func updateIsFavorite(link: LinkModel) {
-        let updateLink = LinkModel(url: link.url,
+        let updateLink = LinkModel(id: link.id,
+                                   url: link.url,
                                    title: link.title,
                                    isFavorite: link.isFavorite ? false : true,
                                    isViewed: link.isViewed)
@@ -51,7 +52,8 @@ final class LinkViewModel: ObservableObject {
     }
     
     func updateIsViewed(link: LinkModel) {
-        let updateLink = LinkModel(url: link.url,
+        let updateLink = LinkModel(id: link.id, 
+                                   url: link.url,
                                    title: link.title,
                                    isFavorite: link.isFavorite,
                                    isViewed: link.isViewed ? false : true)

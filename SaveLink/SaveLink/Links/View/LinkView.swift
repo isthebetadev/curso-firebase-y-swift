@@ -45,32 +45,53 @@ struct LinkView: View {
                 
                 ForEach(linkViewModel.links) { link in
                     
-                    Text(link.title)
-                        .bold()
-                        .lineLimit(4)
-                        .padding(.bottom, 8)
+                    VStack {
                     
-                    Text(link.url)
-                        .foregroundStyle(.gray)
-                        .font(.caption)
-                    
-                    HStack {
+                        Text(link.title)
+                            .bold()
+                            .lineLimit(4)
+                            .padding(.bottom, 8)
                         
-                        Spacer()
+                        Text(link.url)
+                            .foregroundStyle(.gray)
+                            .font(.caption)
                         
-                        if link.isViewed {
-                            Image(systemName: "checkmark.circle.fill")
-                                .resizable()
-                                .foregroundStyle(.blue)
-                                .frame(width: 12, height: 12)
+                        HStack {
+                            
+                            Spacer()
+                            
+                            if link.isViewed {
+                                Image(systemName: "checkmark.circle.fill")
+                                    .resizable()
+                                    .foregroundStyle(.blue)
+                                    .frame(width: 12, height: 12)
+                            }
+                            
+                            if link.isFavorite {
+                                Image(systemName: "star.fill")
+                                    .resizable()
+                                    .foregroundStyle(.yellow)
+                                    .frame(width: 12, height: 12)
+                            }
+                            
                         }
                         
-                        if link.isFavorite {
-                            Image(systemName: "star.fill")
-                                .resizable()
-                                .foregroundStyle(.yellow)
-                                .frame(width: 12, height: 12)
-                        }
+                    }
+                    .swipeActions(edge: .trailing) {
+                        
+                        Button(action: {
+                            linkViewModel.updateIsFavorite(link: link)
+                        }, label: {
+                            Label("Fav", systemImage: "star.fill")
+                        })
+                        .tint(.yellow)
+
+                        Button(action: {
+                            linkViewModel.updateIsViewed(link: link)
+                        }, label: {
+                            Label("Seen", systemImage: "eye.circle.fill")
+                        })
+                        .tint(.blue)
                         
                     }
                     
