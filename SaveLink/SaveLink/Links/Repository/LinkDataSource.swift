@@ -61,4 +61,11 @@ final class LinkDataSource {
         }
     }
     
+    func deleteLink(link: LinkModel) {
+        guard let documentId = link.id else {
+            return
+        }
+        database.collection(collection).document(documentId).delete()
+    }
+    
 }

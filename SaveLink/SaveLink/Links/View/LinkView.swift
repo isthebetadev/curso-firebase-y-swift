@@ -94,6 +94,16 @@ struct LinkView: View {
                         .tint(.blue)
                         
                     }
+                    .swipeActions(edge: .leading) {
+                        
+                        Button(action: {
+                            linkViewModel.delete(link: link)
+                        }, label: {
+                            Label("Delete", systemImage: "trash.fill")
+                        })
+                        .tint(.red)
+                        
+                    }
                     
                 }
             }
